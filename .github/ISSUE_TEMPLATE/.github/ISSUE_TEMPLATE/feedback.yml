@@ -1,0 +1,25 @@
+name: Feedback / idea
+description: Tell us what you'd want from a local-first AI environment.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Nolvion to do (or not do)?
+    validations:
+      required: true
+  - type: dropdown
+    id: who
+    attributes:
+      label: Which best describes you?
+      options:
+        - Developer
+        - Researcher / university
+        - Business
+        - Student
+        - Other
+  - type: input
+    id: hardware
+    attributes:
+      label: Your computer / GPU (optional)

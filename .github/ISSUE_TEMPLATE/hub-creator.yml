@@ -1,0 +1,49 @@
+name: Founding Hub Creator application
+description: Bring your MCP server, agent, workflow or tool to the Nolvion Hub at launch.
+title: "[Hub creator] "
+labels: ["hub-creator"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest. Nolvion and the Hub are in development, with the first early-access wave targeted for Nov 20, 2026. Founding creators get early access and launch their extensions alongside Nolvion.
+  - type: input
+    id: project
+    attributes:
+      label: Project name
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to the project (repo or website)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What does it do?
+    validations:
+      required: true
+  - type: dropdown
+    id: local
+    attributes:
+      label: Can it run fully on a user's own computer?
+      options:
+        - "Yes, fully local"
+        - "Partly (needs some online services)"
+        - "No, it's a remote service"
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Best way to reach you (optional)
+      description: Only share what you're comfortable having visible on this public page.
+  - type: checkboxes
+    id: understand
+    attributes:
+      label: Understanding
+      options:
+        - label: I understand Nolvion and the Hub are in development and plans may change.
+          required: true
